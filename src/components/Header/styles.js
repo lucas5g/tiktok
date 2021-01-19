@@ -54,5 +54,14 @@ export const Avatar = styled.div `
         margin: 0;
         padding: 0;
         font-feature-settings: 'tnum';
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        line-height: middle;
+        line-height: 32px;
+        border-radius: 50%;
     }
 `

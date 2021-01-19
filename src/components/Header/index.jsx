@@ -5,16 +5,14 @@ function Header(){
         <Container>
             <Content>
                 <LogoContainer>
-                    <LogoIcon>
-
-                    </LogoIcon>
-                    <Logo>
-
-                    </Logo>
+                    <LogoIcon src='/images/logoIcon.svg' />
+                    <Logo src='/images/logo.svg' />
                 </LogoContainer>
                 <OptionsContainer>
-                    <Icon></Icon>
-                    <Avatar></Avatar>
+                    <Icon src='/images/uploadIcon.svg' />
+                    <Avatar>
+                        <img src="https://p16-va.tiktokcdn.com/img/musically-maliva-obj/1658913186824198~c5_100x100.jpeg" alt=""/>
+                    </Avatar>
                 </OptionsContainer>
             </Content>
         </Container>

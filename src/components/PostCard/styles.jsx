@@ -6,6 +6,7 @@ export const Container = styled.div`
     position: relative;
     padding-bottom: 25px;
     border-bottom: 0.5px solid rgba(22, 24, 35, .12);
+    margin-bottom: 20px;
 `
 
 export const Header = styled.div`
@@ -51,25 +52,96 @@ export const Author = styled.div`
     }
 `
 
-export const Description = styled.div``
+export const Description = styled.div`
+    display: inline;
+`
 
-export const Song = styled.div``
+export const Song = styled.div`
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+    a{
+        font-weight: 600;
+        cursor: pointer;
+        :hover{
+            text-decoration: underline;
+        }
+    }
+    img{
+        width: 18px;
+        height: 25px;
+        margin-right: 5px;
+    }
+`
 
-export const Tag = styled.div``
+export const Tag = styled.div`
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 4px;
+    font-size: 16px;
+    :hover{
+        text-decoration: underline;
+    }
+`
 
-export const Content = styled.div``
+export const Content = styled.div`
+    margin-left: 68px;
+`
+export const ActionsContainer = styled.div`
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    left: 12px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
 
-export const VideoContainer = styled.div``
+export const VideoContainer = styled.div`
+    cursor: pointer;
+    width: calc(0.56 * (400px + ((100vw - 758px) / 1152) * 100));
+    position: relative;
+    margin-top: 15px;
+    :hover{
+        ${ActionsContainer}{
+            visibility: visible;
+        }
+    }
+`
 
-export const Video = styled.div``
+export const Video = styled.div`
+    max-width: 100%;
+    border-radius: 9px;
+`
 
-export const ActionsContainer = styled.div``
+export const PlayerIcon = styled.div`
+    width: 20px;
+    height: 20px;
+`
 
-export const PlayerIcon = styled.div``
+export const Actions = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 12px;
+`
 
-export const Actions = styled.div``
+export const Action = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 25px;
+    cursor: pointer;
 
-export const Action = styled.div``
+    img{
+        width: 32px;
+        height: 32px;
+        margin-right: 4px;
+    }
+`
 
 export const ButtonContainer = styled.div`
     width: 118px;

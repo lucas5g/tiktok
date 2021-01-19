@@ -10,9 +10,9 @@ function Index(){
         </Layout>
     )
 }
-export async function getServerSideProps(context){
+// export async function getServerSideProps(context){
     
-}
+// }
 
 
 export default Index
